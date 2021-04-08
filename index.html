@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6">
+      <h2 style="margin:5px">Bienvenido a tu lista de tareas</h2>
+      <ul id="myUL" style="margin:15px">
+        <li class="alert alert-primary">
+          Esta es una tarea primary
+        </li>
+        <li class="alert alert-secondary">
+          Esta es una tarea secondary
+        </li>
+        <li class="alert alert-success">
+          Esta es una tarea success
+        </li>
+      </ul>
+		</div>
+
+
+		<div class="col-md-6">
+      <h2 style="margin:15px">Tarea</h2>
+      <div id="myDIV" class="header">
+        <input type="text" id="myInput" class="form-control" placeholder="Success: Esta tarea es una tarea success" value="success: Esta tarea es una tarea success">
+        <button type="button" onclick="newElement()" style="margin:15px" class="btn btn-primary">Agregar</button>
+        <div class="card" style=" margin:15px">
+          <div class="card-body">
+            <h5 class="card-title">Define las tareas según la importancia con los siguientes items seguidos de la descripción.</h5>
+            <span class="badge bg-primary">Primary</span>
+            <span class="badge bg-secondary">Secondary</span>
+            <span class="badge bg-success">Success</span>
+            <span class="badge bg-danger">Danger</span>
+            <span class="badge bg-warning text-dark">Warning</span>
+            <span class="badge bg-info text-dark">Info</span>
+            <span class="badge bg-light text-dark">Light</span>
+            <span class="badge bg-dark">Dark</span>
+          </div>
+        </div>
+      </div>
+		</div>
+	</div>
+</div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
